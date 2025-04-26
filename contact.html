@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Fitness Center</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo"><span>🏋️</span> Fitness Center</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="calculator.html">Calorie Calculator</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="contact-section">
+  <div class="container">
+    <h2>Get In Touch</h2>
+    <div class="contact-form">
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="tel" placeholder="Your Phone (Optional)" />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Fitness Center. All rights reserved.</p>
+      <p>Email: info@fitnesscenter.com</p>
+      <p>Created by Namira</p>
+    </div>
+  </footer>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for your message! We will get back to you soon.');
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
